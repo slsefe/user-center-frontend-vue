@@ -13,6 +13,7 @@
           v-model:selectedKeys="current"
           mode="horizontal"
           :items="items"
+          @click="doMenuClick"
         />
       </a-col>
       <a-col flex="100px"
@@ -28,6 +29,14 @@
 import { h, ref } from "vue";
 import { HomeOutlined, CrownOutlined } from "@ant-design/icons-vue";
 import { MenuProps } from "ant-design-vue";
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+const doMenuClick = ({ key }: { key: string }) => {
+  router.push({ path: key });
+};
+
 const current = ref<string[]>(["mail"]);
 const items = ref<MenuProps["items"]>([
   {

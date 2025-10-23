@@ -11,19 +11,19 @@ const routes: Array<RouteRecordRaw> = [
     path: "/user/login",
     name: "userLogin",
     // TODO
-    components: HomeView,
+    component: HomeView,
   },
   {
     path: "/user/register",
     name: "userRegister",
     // TODO
-    components: HomeView,
+    component: HomeView,
   },
   {
     path: "/admin/userManage",
     name: "adminUserManage",
     // TODO
-    components: HomeView,
+    component: HomeView,
   },
 ];
 
