@@ -37,12 +37,12 @@ const items = ref<MenuProps["items"]>([
     title: "主页",
   },
   {
-    key: "/users/login",
+    key: "/user/login",
     label: "用户登录",
     title: "用户登录",
   },
   {
-    key: "/users/register",
+    key: "/user/register",
     label: "用户注册",
     title: "用户注册",
   },
