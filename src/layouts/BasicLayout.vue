@@ -1,9 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import GlobalHeader from "@/components/GlobalHeader.vue";
+</script>
 
 <template>
   <div id="basic-layout">
     <a-layout>
-      <a-layout-header :style="headerStyle">Header</a-layout-header>
+      <a-layout-header class="header">
+        <GlobalHeader />
+      </a-layout-header>
       <a-layout-content :style="contentStyle" class="content">
         <!--使用router-view，将布局的路由对应的组件动态替换到本区域-->
         <router-view />
@@ -34,5 +38,12 @@
   padding: 20px;
   margin-bottom: 20px;
   background: #ffffff;
+}
+
+#basic-layout .header {
+  background: #ffffff;
+  margin-bottom: 16px;
+  color: unset;
+  padding-inline: 20px;
 }
 </style>
