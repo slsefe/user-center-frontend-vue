@@ -38,6 +38,11 @@ const doMenuClick = ({ key }: { key: string }) => {
 };
 
 const current = ref<string[]>(["mail"]);
+// 监听路由变化，更新当前菜单选中状态
+router.afterEach((to, from, failure) => {
+  current.value = [to.path];
+});
+
 const items = ref<MenuProps["items"]>([
   {
     key: "/",
