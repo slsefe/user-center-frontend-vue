@@ -18,8 +18,11 @@
       </a-col>
       <a-col flex="100px"
         ><div class="user-login-status">
-          <div v-if="loginUserStore.logiUser.id">
-            {{ JSON.stringify(loginUserStore.logiUser.username) }}
+          <div v-if="loginUserStore.loginUser.id">
+            {{
+              loginUserStore.loginUser.username ??
+              loginUserStore.loginUser.account
+            }}
           </div>
           <div v-else>
             <a-button type="primary" href="/users/login">登录</a-button>
