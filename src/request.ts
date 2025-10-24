@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "https://some-domain.com/api/",
+  baseURL: "http://localhost:8080/user-center",
   timeout: 10000,
   withCredentials: true,
 });
@@ -45,6 +45,5 @@ instance.interceptors.response.use(
     return Promise.reject(error);
   }
 );
-
 
 export default instance;
