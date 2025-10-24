@@ -6,6 +6,7 @@ interface LoginUser {
   id: number;
   username: string;
   account: string;
+  role: number;
 }
 
 export const useLoginUserStore = defineStore("loginUser", () => {
@@ -13,6 +14,7 @@ export const useLoginUserStore = defineStore("loginUser", () => {
     id: 0,
     username: "未登录",
     account: "",
+    role: 0,
   });
 
   // 调用后端接口获取当前登录用户信息
