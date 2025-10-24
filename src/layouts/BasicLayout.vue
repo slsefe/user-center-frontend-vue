@@ -14,9 +14,9 @@ import GlobalHeader from "@/components/GlobalHeader.vue";
       </a-layout-content>
       <a-layout-footer class="footer">
         <a
-          href="https://github.com/slsefe/user-management-system"
+          href="https://github.com/slsefe/user-center-frontend-vue"
           target="_blank"
-          >github</a
+          >GitHub</a
         >
       </a-layout-footer>
     </a-layout>
