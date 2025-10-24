@@ -8,11 +8,11 @@ import GlobalHeader from "@/components/GlobalHeader.vue";
       <a-layout-header class="header">
         <GlobalHeader />
       </a-layout-header>
-      <a-layout-content :style="contentStyle" class="content">
+      <a-layout-content class="content">
         <!--使用router-view，将布局的路由对应的组件动态替换到本区域-->
         <router-view />
       </a-layout-content>
-      <a-layout-footer :style="footerStyle" class="footer">
+      <a-layout-footer class="footer">
         <a
           href="https://github.com/slsefe/user-management-system"
           target="_blank"

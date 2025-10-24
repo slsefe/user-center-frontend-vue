@@ -4,7 +4,7 @@ import { getCurrentUser } from "@/api/user";
 
 export const useLoginUserStore = defineStore("loginUser", () => {
   const logiUser = ref<any>({
-    userName: "未登录",
+    username: "未登录",
   });
 
   // 调用后端接口获取档期啊登录用户信息
