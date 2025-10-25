@@ -4,7 +4,7 @@ const instance = axios.create({
   baseURL:
     process.env.NODE_ENV === "development"
       ? "http://localhost:8080/user-center"
-      : "http://localhost:8080/user-center",
+      : "http://81.70.182.9:8080/user-center",
   timeout: 10000,
   withCredentials: true,
 });
